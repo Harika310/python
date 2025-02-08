@@ -26,9 +26,9 @@ instances = ec2.create_instances(
 )
 
 # Print instance details
-for instance in instances:
-    print(f"EC2 Instance ID: {instance.id}")
-    print(f"Instance State: {instance.state['Name']}")
+# for instance in instances:
+#     print(f"EC2 Instance ID: {instance.id}")
+#     print(f"Instance State: {instance.state['Name']}")
 
 ec2 = boto3.client('ec2')
 
