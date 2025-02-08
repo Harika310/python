@@ -16,8 +16,8 @@ instances = ec2.create_instances(
             'ResourceType': 'instance',
             'Tags': [
                 {
-                    'key': 'Name',
-                    'Value': 'Python'
+                    'Key': 'Name',
+                    'Value': 'Python'  # Replace with your desired instance name
                 }
             ]
         }
