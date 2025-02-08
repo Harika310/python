@@ -7,7 +7,6 @@ ec2 = boto3.resource('ec2')
 instances = ec2.create_instances(
     ImageId='ami-09c813fb71547fc4f',  # Replace with your desired AMI ID
     MinCount=1,
-    MaxCount=1,
     InstanceType='t2.micro',
     SecurityGroupIds=['sg-089040169ad25fd55'],
     # KeyName='your-key-pair-name'  # Replace with your key pair name
