@@ -29,7 +29,7 @@ instances = ec2.create_instances(
 for instance in instances:
     print(f"EC2 Instance Name: {instance.Name}")
     print(f"EC2 Instance ID: {instance.id}")
-    print(f"Instance State: {instance.state['Name']}")
+    print(f"Instance State: {instance.state['Value']}")
     # print(f"Stop instance: {stop_instance('i-0abcd1234efgh5678')}")
 
 
