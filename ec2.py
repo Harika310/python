@@ -1,15 +1,16 @@
-import boto3
+import boto3  # pip install boto3
 
 ec2 = boto3.client('ec2')
 
 def list_instances():
-    response = ec2.describe_instance()
-    for reservation in response['Reservation']:
+    response = ec2.describe_instances()
+    for reservation in response['Reservations']:
         for instance in reservation['Instances']:
             print(f"Instance ID: {instance['InstanceId']}")
 
-if __name__ == "main":
-    list_instances() 
+
+if __name__ == "__main__":
+    list_instances()
 
 # import boto3
 
