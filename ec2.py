@@ -38,7 +38,7 @@ for instance in instances:
 #     print(f"Started instance: {instance_id}")
 
 def stop_instance(instance_id):
-    ec2.stop_instances(InstanceIds=[instance_id])
+    ec2.instances.filter(InstanceIds=[instance_id]).stop()
     print(f"Stopped instance: {instance_id}")
     
 if __name__ == "__main__":
