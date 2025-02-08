@@ -37,11 +37,19 @@ for instance in instances:
 #     ec2.start_instances(InstanceIds=[instance_id])
 #     print(f"Started instance: {instance_id}")
 
-# def stop_instance(instance_id):
-#     ec2.stop_instances(InstanceIds=[instance_id])
-#     print(f"Stopped instance: {instance_id}")
+def stop_instance(instance_id):
+    ec2.stop_instances(InstanceIds=[instance_id])
+    print(f"Stopped instance: {instance_id}")
     
-
+if __name__ == "__main__":
+    # Create an instance
+    # create_instance()
+    
+    # Example instance ID, replace with the actual instance ID you want to stop
+    instance_id = 'i-03e5196d98360bd08'
+    
+    # Stop the instance
+    stop_instance(instance_id)
 
 
 
