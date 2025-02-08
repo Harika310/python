@@ -30,20 +30,20 @@ for instance in instances:
     print(f"EC2 Instance ID: {instance.id}")
     print(f"Instance State: {instance.state['Name']}")
 
-# ec2 = boto3.client('ec2')
+ec2 = boto3.client('ec2')
 
-# def list_instances():
-#     response = ec2.describe_instances()
-#     for reservation in response['Reservations']:
-#         for instance in reservation['Instances']:
-#             print(f"Instance ID: {instance['InstanceId']}")
+def list_instances():
+    response = ec2.describe_instances()
+    for reservation in response['Reservations']:
+        for instance in reservation['Instances']:
+            print(f"Instance ID: {instance['InstanceId']}")
 
 # def start_instance(instance_id):
 #     ec2.start_instances(InstanceIds=[instance_id])
 #     print(f"Started instance: {instance_id}")
 
-# if __name__ == "__main__":
-#     list_instances()
+if __name__ == "__main__":
+    list_instances()
 #     start_instance('i-0abcd1234efgh5678')
 
 
