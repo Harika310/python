@@ -1,4 +1,4 @@
-# dictionary is a key-value pairs and mutable datatype , key shoulb be unique otherwise it overrides the values
+# dictionary is a key-value pairs and mutable datatype , key should be unique otherwise it overrides the values
 # d = { 'k': 123, 'k': 1234}
 # print(d['k'])
 

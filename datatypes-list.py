@@ -28,13 +28,13 @@
 # l.extend([10, 40,70,'xyz',True])
 # print(l)
 
-# l = [5, 4, 8 ,2]
+l = [5, 4, 8 ,2]
 # l.sort()
 # print(l)
 
 # l1 = sorted(l)
 # print(l,l1)
-# print(sorted(l))
+print(sorted(l))
 
-txt = "hello, welcome to my world"
-print(txt.split(" "))
+# txt = "hello, welcome to my world"
+# print(txt.split(" "))
