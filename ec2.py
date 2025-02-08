@@ -26,29 +26,29 @@ instances = ec2.create_instances(
 )
 
 # Print instance details
-# for instance in instances:
-#     print(f"EC2 Instance ID: {instance.id}")
-#     print(f"Instance State: {instance.state['Name']}")
+for instance in instances:
+    print(f"EC2 Instance Name: {instance.Name}")
+    print(f"EC2 Instance ID: {instance.id}")
+    print(f"Instance State: {instance.state['Name']}")
+    # print(f"Stop instance: {stop_instance('i-0abcd1234efgh5678')}")
 
-ec2 = boto3.client('ec2')
-
-def list_instances():
-    response = ec2.describe_instances()
-    for reservation in response['Reservations']:
-        for instance in reservation['Instances']:
-            print(f"Instance ID: {instance['InstanceId']}")
 
 # def start_instance(instance_id):
 #     ec2.start_instances(InstanceIds=[instance_id])
 #     print(f"Started instance: {instance_id}")
 
-if __name__ == "__main__":
-    list_instances()
-#     start_instance('i-0abcd1234efgh5678')
+# def stop_instance(instance_id):
+#     ec2.stop_instances(InstanceIds=[instance_id])
+#     print(f"Stopped instance: {instance_id}")
+    
+
+
+
 
 
 # import boto3
 
+# Print all instance details(terminated, Running)
 # ec2 = boto3.client('ec2')
 
 # def list_instances():
