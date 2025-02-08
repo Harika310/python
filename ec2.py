@@ -27,9 +27,9 @@ instances = ec2.create_instances(
 
 # Print instance details
 for instance in instances:
-    print(f"EC2 Instance Name: {instance.Name}")
+    print(f"EC2 Instance Name: {instance.Value}")
     print(f"EC2 Instance ID: {instance.id}")
-    print(f"Instance State: {instance.state['Value']}")
+    print(f"Instance State: {instance.state['Name']}")
     # print(f"Stop instance: {stop_instance('i-0abcd1234efgh5678')}")
 
 
