@@ -9,7 +9,7 @@ instances = ec2.create_instances(
     MinCount=1,
     MaxCount=1,
     InstanceType='t2.micro',
-    Vpc_id=["sg-089040169ad25fd55"]
+    SecurityGroupIds=['sg-089040169ad25fd55']
     # KeyName='your-key-pair-name'  # Replace with your key pair name
 )
 
