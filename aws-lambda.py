@@ -11,7 +11,7 @@ def lambda_handler(event, context):
         MaxCount=1,
         InstanceType='t2.micro',
         SecurityGroupIds=['sg-089040169ad25fd55'],
-        SubnetId=''
+        # SubnetId=''
         # KeyName='your-key-pair-name'  # Replace with your key pair name
         TagSpecifications=[
             {
