@@ -1,7 +1,7 @@
 import boto3
 
 def lambda_handler(event, context):
-    ec2 = boto3.client('ec2', region_name='us-west-2')  # Change the region as needed
+    ec2 = boto3.client('ec2', region_name='us-east-1')  # Change the region as needed
 
 
     instance = ec2.run_instances(
